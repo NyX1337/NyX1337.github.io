@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-
-
-body{
-    background: fixed;
-    background-color:azure;
-    font-family: "Poppins";
+body {
+  background: fixed;
+  background-color: rgb(124, 129, 129);
+  font-family: 'Poppins';
 }
-a{
-    font-family: "Poppins";
-}
-html{
-    color: blue;
+a {
+  font-family: 'Poppins';
 }
