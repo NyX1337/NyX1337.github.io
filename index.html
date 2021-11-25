@@ -2,18 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Web Shop</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -33,42 +42,27 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarExample01">
             <!-- Just an image -->
-            <nav class="navbar navbar-light bg-light">
-              <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img
-                    src="img/Web_shop.jpg"
-                    height="30"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            </nav>
+            <nav class="navbar navbar-light"></nav>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Početna</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Značajke</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cijene</a>
+                <a class="nav-link" href="#">Usluge</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">O nama</a>
               </li>
             </ul>
-            <ul class="navbar-nav d-flex flex-row">
+            <ul class="navbar-nav">
               <!-- Icons -->
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#">
-                  <span class="badge badge-pill bg-danger">1</span>
-                  <span><i class="fas fa-shopping-cart"></i></span>
+              <li class="nav-item ps-5">
+                <a href="#!" class="btn btn-primary">
+                  <i class="fas fa-phone-alt mx-2"></i>Kontakt
                 </a>
               </li>
               <!-- Icon dropdown -->
-              <li class="nav-item me-3 me-lg-0 dropdown">
+              <!-- <li class="nav-item me-3 me-lg-0 dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -79,26 +73,27 @@
                 >
                   <i class="fas fa-user"></i>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
       <!-- Navbar -->
-    
+
       <!-- Background image -->
       <div
         class="p-5 text-center bg-image shadow-1-strong"
-        style="
-          background-image: url('https://www.lovethegarden.com/sites/default/files/styles/header_image_xl/public/content/articles/UK_advice-lawn-care-how-buy-lawn-mower_header.jpg?itok=8X0k--u1');
-          height: 500px;
-        "
+        style="background-image: url('./img/kolijevka.jpg'); height: 500px"
       >
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-              <h1 class="mb-3">Ljetna rasprodaja</h1>
-              <h4 class="mb-3">Popusti i do 70%!</h4>
+              <h1 class="mb-3">BLACK FRIDAY</h1>
+              <h4 class="mb-3">Popusti do 20%</h4>
+              <p class="opacity-70 font-weight-normal">
+                Za izradu dječjih kučica po mjeri koja vrijedi za narudžbe do
+                28.11.2021
+              </p>
               <a class="btn btn-outline-light btn-lg" href="#!" role="button"
                 >Provjerite popuste ovdje</a
               >
@@ -110,251 +105,168 @@
     </header>
     <main class="mt-5">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <strong class="text-dark mr-2"> Kategorije:</strong>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">            
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sve</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Kosilice</a>
-                </li>   
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Trimeri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Motorne pile</a>
-                </li>       
-              </ul>     
-              <form class="d-flex input-group w-auto">
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Upiši"
-                  aria-label="Search"
-                />
-                <button
-                  class="btn btn-outline-primary"
-                  type="button"
-                  data-mdb-ripple-color="dark"
-                >
-                  Traži
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
+        <div class="text-white d-flex justify-content-center">
+          <h1 class="mb-5">PREPORUČENI PROIZVODI</h1>
+        </div>
         <!-- Sekcija produkta -->
         <section class="text-center mb-4">
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img
-                    src="img/kosilica.jpg"
-                    class="img-fluid"
-                  />
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="img/krevet1.jpg" class="img-fluid" />
                   <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title mb-4">Samohodna kosilica Garten</h5>
+                  <h5 class="card-title mb-4">Drveni krevet Oak</h5>
+                  <h6 class="cijena mb-4">1599,99kn</h6>
+                  <p class="card-text mb-4">
+                    Drveni krevet u obliku kućice izrađen je s najvećom pažnjom
+                    i preciznošću. Pojedinačni dijelovi kreveta izrađeni su od
+                    svijetlog borovog drva, zbog čega se ovaj krevet kućica
+                    uklapa u sobe skandinavskog stila.
+                  </p>
+                  <p class="card-text mb-5">Dimenzije: 100x250cm</p>
+                  <a href="#!" class="btn btn-warning">Naruči Odmah!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="img/krevet2.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title mb-4">Krevet Mila Classic</h5>
+                  <h6 class="cijena mb-4">1199,99kn</h6>
+                  <p class="card-text mb-5">
+                    Krevet Mila Classic u obliku kućice s ogradicom jednostavnog
+                    dizajna pogodan je ne samo za spavanje, ali čak i za igranje
+                    i ludiranje tijekom dana zahvaljujući svojoj čvrstoj i
+                    masivnoj konstrukciji.
+                  </p>
+                  <p class="card-text mb-5">Dimenzije: 90x200cm</p>
+                  <a href="#!" class="btn btn-warning">Naruči Odmah!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="img/krevet3.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title mb-4">Krevet Mila Classic Bijeli</h5>
                   <h6 class="cijena mb-4">1399,99kn</h6>
                   <p class="card-text mb-5">
-                    Samohodna kosilica marke Garten za lakšu košnju trave.
+                    Bijeli drveni krevet Mila Classic u obliku kuće postat će
+                    savršeni dio svake dječje sobe. Danju će poslužiti kao
+                    prostor za igru a noću sigurno mjesto za spavanje. Od
+                    masivnog bora. Krevet ima letvičastu podnicu.
                   </p>
-                  <a href="#!" class="btn btn-primary">Kupi Odmah!</a>
+                  <p class="card-title mb-5">Dimenzije: 90x200cm</p>
+                  <a href="#!" class="btn btn-warning">Naruči Odmah!</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-              <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img
-                    src="img/Trimer.jpg"
-                    class="img-fluid"
-                  />
-                  <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title mb-4">Trimer Husqvarna</h5>
-                  <h6 class="cijena mb-4">3299,99kn</h6>
-                  <p class="card-text mb-4">
-                    Odličan izbor kao početni model. Idealan trimer za sve one koji trebaju kositi manje i nezahtjevne travnate površine. 
-                  </p>
-                  <a href="#!" class="btn btn-primary">Kupi Odmah!</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-              <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img
-                    src="img/motorna_pila.jpg"
-                    class="img-fluid"
-                  />
-                  <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title mb-4">Motorna pila Makita</h5>
-                  <h6 class="cijena mb-4">3650,99kn</h6>
-                  <p class="card-text mb-5">
-                    Motorna pila Makita slovenske kvalitete. Laka za koristit i neporederiva.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Kupi Odmah!</a>
-                </div>
-              </div>
-            </div>
-            <nav aria-label="...">
-              <ul class="pagination pagination-circle d-flex justify-content-center">
-                <li class="page-item">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </section>
         <!-- Sekcija produkta -->
       </div>
     </main>
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Budite povezani s nama na socijalnim mrežama:</span>
-    </div>
-    <!-- Left -->
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <section class="mb-4">
+          <h4>LD DRVO D.O.O.</h4>
+          <p>Izrada dječjih kreveta i kučica za vaše mališane!</p>
+        </section>
+        <!-- Section: Social media -->
+        <section class="mb-0 position-relative bottom-0 start-0">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center"></div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+        <!-- Section: Text -->
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Prodaja j.d.o.o
-          </h6>
-          <p>
-            Prodajemo i popravljamo razne vrste kosilica, trimera, i motornih pila
-          </p>
-        </div>
-        <!-- Grid column -->
+        <!-- Section: Text -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Vrste Kosilica
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Ručna kosilica</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Električna kosilica</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Benzinska kosilica</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Korisni linkovi
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Cijene</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Postavke</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Narudžbe</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Pomoć</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Kontakt
-          </h6>
-          <p><i class="fas fa-home me-3"></i> Ludbreg, 42230, Hrvatska</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@blabla.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 385 01 02 03 04 05</p>
-          <p><i class="fas fa-print me-3"></i> + 385 02 03 04 05 06</p>
-        </div>
-        <!-- Grid column -->
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row"></div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+      <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Matija Jovanović
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">NCG</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
   </body>
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
