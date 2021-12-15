@@ -35,6 +35,11 @@
   line-height: 26px;
   font-weight: 400;
 }
+.contact-form .form-control {
+  display: block;
+  border-color: rgb(35, 35, 35);
+  font-size: 18px;
+}
 /* .contact-form .input-text:focus + .label,
 .contact-form .input-text.not-empty + .label {
   transform: translateY(-24px);
