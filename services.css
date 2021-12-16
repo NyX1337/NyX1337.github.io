@@ -27,10 +27,6 @@ body {
 .service-icon {
   position: relative;
 }
-.service-title p {
-  padding: 0 190px;
-  margin-bottom: 10px;
-}
 .about-info-text h2 {
   margin-bottom: 23px;
   text-transform: capitalize;
