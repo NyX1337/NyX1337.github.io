@@ -53,7 +53,9 @@
                 >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Namještaj</a>
+                <a class="nav-link" aria-current="page" href="./furniture.html"
+                  >Namještaj</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./services.html">Usluge</a>
@@ -68,35 +70,43 @@
       <!-- Navbar -->
     </header>
     <section class="get_in_touch">
-      <h1 class="title">pošaljite upit</h1>
-
-      <div class="container">
-        <div class="contact-form row">
-          <div class="form-field col-lg-6">
-            <input type="text" name="" id="ime" class="input-text" />
-            <label for="ime" class="label">Ime</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input type="email" name="" id="prezime" class="input-text" />
-            <label for="prezime" class="label">prezime</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input type="text" name="" id="email" class="input-text" />
-            <label for="email" class="label">email</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input type="number" name="" id="phone" class="input-text" />
-            <label for="phone" class="label">broj telefona</label>
-          </div>
-          <div class="form-field col-lg-12">
-            <input type="text" name="" id="message" class="input-text" />
-            <label for="message" class="label">Upit</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input class="submit-btn" type="submit" name="" value="pošalji" />
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h1 class="title">pošaljite upit</h1>
+        <div class="container">
+          <div class="contact-form row">
+            <div class="form-field col-lg-6">
+              <input type="text" name="" id="ime" class="input-text" />
+              <label for="ime" class="label">Ime</label>
+            </div>
+            <div class="form-field col-lg-6">
+              <input type="text" name="" id="prezime" class="input-text" />
+              <label for="prezime" class="label">prezime</label>
+            </div>
+            <div class="form-field col-lg-6">
+              <input type="email" name="" id="email" class="input-text" />
+              <label for="email" class="label">email</label>
+            </div>
+            <div class="form-field col-lg-6">
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name=""
+                id="phone"
+                class="input-text"
+                required
+              />
+              <label for="phone" class="label">broj telefona</label>
+            </div>
+            <div class="form-field col-lg-12">
+              <input type="text" name="" id="message" class="input-text" />
+              <label for="message" class="label">Upit</label>
+            </div>
+            <div class="form-field col-lg-6">
+              <input class="submit-btn" type="submit" name="" value="pošalji" />
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
     <div class="row-md-6 text-center">
       <div class="col-md-12">
@@ -121,5 +131,20 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: 'smtp.gmail.com',
+        Username: 'matttek9@gmail.com', //moj username - tu bude isel danijelov mail
+        Password: '42230r02s',
+        To: 'deushr141@gmail.com',
+        From: document.getElementById('email').value,
+        Subject: 'Contact form test',
+        Body: 'And this is the body',
+      }).then((message) => alert(message))
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="./scripts/main.js"></script>
 </html>
