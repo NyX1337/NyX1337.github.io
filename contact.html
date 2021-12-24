@@ -135,11 +135,12 @@
   <script>
     function sendEmail() {
       Email.send({
-        Host: 'smtp.gmail.com',
-        Username: 'matttek9@gmail.com', //moj username - tu bude isel danijelov mail
-        Password: '42230r02s',
+        SecureToken: '179b94f7-209c-40c0-bb43-0a3fde6f1898',
+        // Host: 'smtp.elasticemail.com',
+        // Username: 'dasdasdas@elasticemail.com', //moj username - tu bude isel danijelov mail
+        // Password: '85EA72630C92C0C6A9F957B0D91653AF54EE',
         To: 'deushr141@gmail.com',
-        From: document.getElementById('email').value,
+        From: 'matttek9@gmail.com',
         Subject: 'Contact form test',
         Body: 'And this is the body',
       }).then((message) => alert(message))
