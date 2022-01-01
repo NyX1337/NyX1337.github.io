@@ -69,45 +69,48 @@
       </nav>
       <!-- Navbar -->
     </header>
-    <section class="get_in_touch">
-      <form onsubmit="sendEmail(); reset(); return false;">
-        <h1 class="title">pošaljite upit</h1>
-        <div class="container">
-          <div class="contact-form row">
-            <div class="form-field col-lg-6">
-              <input type="text" name="" id="ime" class="input-text" />
-              <label for="ime" class="label">Ime</label>
-            </div>
-            <div class="form-field col-lg-6">
-              <input type="text" name="" id="prezime" class="input-text" />
-              <label for="prezime" class="label">prezime</label>
-            </div>
-            <div class="form-field col-lg-6">
-              <input type="email" name="" id="email" class="input-text" />
-              <label for="email" class="label">email</label>
-            </div>
-            <div class="form-field col-lg-6">
-              <input
-                type="tel"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                name=""
-                id="phone"
-                class="input-text"
-                required
-              />
-              <label for="phone" class="label">broj telefona</label>
-            </div>
-            <div class="form-field col-lg-12">
-              <input type="text" name="" id="message" class="input-text" />
-              <label for="message" class="label">Upit</label>
-            </div>
-            <div class="form-field col-lg-6">
-              <input class="submit-btn" type="submit" name="" value="pošalji" />
-            </div>
+    <form class="get_in_touch" method="post">
+      <h1 class="title">pošaljite upit</h1>
+      <div class="container">
+        <div class="contact-form row">
+          <div class="form-field col-lg-6">
+            <input type="text" name="" id="ime" class="input-text" />
+            <label for="ime" class="label">Ime</label>
+          </div>
+          <div class="form-field col-lg-6">
+            <input type="text" name="" id="prezime" class="input-text" />
+            <label for="prezime" class="label">prezime</label>
+          </div>
+          <div class="form-field col-lg-6">
+            <input type="email" name="" id="email" class="input-text" />
+            <label for="email" class="label">email</label>
+          </div>
+          <div class="form-field col-lg-6">
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              name=""
+              id="phone"
+              class="input-text"
+              required
+            />
+            <label for="phone" class="label">broj telefona</label>
+          </div>
+          <div class="form-field col-lg-12">
+            <input type="text" name="" id="message" class="input-text" />
+            <label for="message" class="label">Upit</label>
+          </div>
+          <div class="form-field col-lg-6">
+            <input
+              class="submit-btn"
+              type="button"
+              value="pošalji"
+              onclick="sendEmail()"
+            />
           </div>
         </div>
-      </form>
-    </section>
+      </div>
+    </form>
     <div class="row-md-6 text-center">
       <div class="col-md-12">
         <ul class="list-unstyled">
@@ -134,15 +137,34 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     function sendEmail() {
+      var ime = $('#ime').val()
+      var prezime = $('#prezime').val()
+      var email = $('#email').val()
+      var telefon = $('#phone').val()
+      var poruka = $('#message').val()
+
+      var body =
+        'Ime: ' +
+        ime +
+        '<br>prezime: ' +
+        prezime +
+        '<br>Email' +
+        email +
+        '<br>Telefon' +
+        telefon +
+        '<br>Poruka' +
+        poruka
+
       Email.send({
-        SecureToken: '179b94f7-209c-40c0-bb43-0a3fde6f1898',
-        // Host: 'smtp.elasticemail.com',
-        // Username: 'dasdasdas@elasticemail.com', //moj username - tu bude isel danijelov mail
-        // Password: '85EA72630C92C0C6A9F957B0D91653AF54EE',
-        To: 'deushr141@gmail.com',
+        // SecureToken: '179b94f7-209c-40c0-bb43-0a3fde6f1898',
+        Host: 'smtp.elasticemail.com',
+        Username: 'matttek9@gmail.com', //moj username - tu bude isel danijelov mail
+        Password: '813DC7EA25EE1E252604827BF0C453D4E592',
+        Port: '2525',
+        To: 'matttek9@gmail.com',
         From: 'matttek9@gmail.com',
-        Subject: 'Contact form test',
-        Body: 'And this is the body',
+        Subject: 'UPIT',
+        Body: body,
       }).then((message) => alert(message))
     }
   </script>
