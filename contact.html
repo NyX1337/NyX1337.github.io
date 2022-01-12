@@ -96,6 +96,14 @@
             />
             <label for="phone" class="label">broj telefona</label>
           </div>
+          <div class="form-field col-lg-6">
+            <input type="text" name="" id="Naziv" class="input-text" />
+            <label for="ime" class="label">Naziv</label>
+          </div>
+          <div class="form-field col-lg-6">
+            <input type="text" name="" id="Dimenzije" class="input-text" />
+            <label for="ime" class="label">Dimenzije</label>
+          </div>
           <div class="form-field col-lg-12">
             <input type="text" name="" id="message" class="input-text" />
             <label for="message" class="label">Upit</label>
@@ -142,17 +150,23 @@
       var email = $('#email').val()
       var telefon = $('#phone').val()
       var poruka = $('#message').val()
+      var naziv = $('#naziv').val()
+      var dimenzije = $('#dimenzije').val()
 
       var body =
         'Ime: ' +
         ime +
         '<br>prezime: ' +
         prezime +
-        '<br>Email' +
+        '<br>Email: ' +
         email +
-        '<br>Telefon' +
+        '<br>Telefon: ' +
         telefon +
-        '<br>Poruka' +
+        '<br>Naziv: ' +
+        naziv +
+        '<br>Dimenzije:' +
+        dimenzije +
+        '<br>Poruka: ' +
         poruka
 
       Email.send({
