@@ -1,6 +1,10 @@
-function SendUpit() {
-  localStorage.setItem('krevet1', 'idegas')
-  // localStorage.setItem('krevet2', 'idegas2')
-  // localStorage.setItem('krevet3', 'idegas3')
+function SelectArticle(ArticleId) {
+  localStorage.setItem('selected', ArticleId)
 }
-document.addEventListener('DOMContentLoaded', SendUpit)
+
+function InitializeLocalStorage() {
+  localStorage.setItem('Article1', 'Beeja Drveni Krevet')
+  localStorage.setItem('Article2', 'Alina Classic')
+  localStorage.setItem('Article3', 'Alina Delux Krevet')
+}
+document.addEventListener('DOMContentLoaded', InitializeLocalStorage)

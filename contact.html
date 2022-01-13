@@ -184,16 +184,15 @@
   <script>
     function ready() {
       let naziv = document.getElementById('naziv')
-      naziv.value = localStorage.getItem('krevet1')
-
-      // let naziv = document.getElementById('naziv')
-      // naziv1.value = localStorage.getItem('krevet2')
-
-      // let naziv = document.getElementById('naziv')
-      // naziv2.value = localStorage.getItem('krevet3')
+      let ArticleId = localStorage.getItem('selected')
+      naziv.value = localStorage.getItem(ArticleId)
     }
-
     document.addEventListener('DOMContentLoaded', ready)
+    window.addEventListener('beforeunload', function () {
+      let naziv = document.getElementById('naziv')
+      naziv.value = ''
+      localStorage.removeItem('selected')
+    })
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 </html>
